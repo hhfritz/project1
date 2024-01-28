@@ -1,0 +1,22 @@
+Interface:
+    TextInput:
+        id: textInput
+        size_hint: 0.5, 0.1
+        multiline: False
+        height: 100
+        hint_text: 'Namen eingeben'
+        pos_hint: {"center_x": 0.5, "center_y": 0.8}
+    Label:
+        id: label
+        size_hint: 0.5, 0.1
+        pos_hint: {"center_x": 0.5, "center_y": 0.7}
+        text: 'Nothing'
+    Button:
+        text: "[color=#FFBF00][b]Hello[/b][/color] World"
+        background_color: 0.5,0.5,1,1
+        font_size: '16sp'
+        size_hint: None, None
+        size: 200, 100
+        pos: root.width/2 - self.width/2, root.height/2 - self.height/2
+        markup: True
+        on_press: root.printing_msg()
